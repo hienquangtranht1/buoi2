@@ -1,0 +1,139 @@
+/* ==========================================================================
+   1. RESET & BASE STYLES
+   - Xóa các style mặc định của trình duyệt và thiết lập kiểu cơ bản cho toàn trang.
+   ========================================================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* ==========================================================================
+     2. LAYOUT & UTILITIES
+     - Các lớp tiện ích chung (nếu cần) và định nghĩa các kích thước chuẩn cho cấu trúc trang.
+     ========================================================================== */
+  /* Bạn có thể bổ sung thêm các class tiện ích theo nhu cầu */
+  
+  /* ==========================================================================
+     3. NAVIGATION BAR
+     - Định dạng cho thanh điều hướng (navbar) với logo và các liên kết.
+     ========================================================================== */
+  .navbar {
+    padding: 1rem 0;
+  }
+  
+  .navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .navbar-brand img {
+    margin-right: 10px;
+  }
+  
+  /* ==========================================================================
+     4. CAROUSEL / SLIDER
+     - Định dạng cho slider, sử dụng chiều cao cố định và object-fit để ảnh luôn đẹp.
+     ========================================================================== */
+  .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  /* ==========================================================================
+     5. ABOUT SECTION
+     - Định dạng cho phần About (giới thiệu) với khoảng cách hợp lý cho section.
+     ========================================================================== */
+  section.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  section.container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  section.container p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  /* ==========================================================================
+     6. FOOTER
+     - Định dạng cho chân trang, sử dụng màu nền tối và văn bản căn giữa.
+     ========================================================================== */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+  
+  /* ==========================================================================
+     7. RESPONSIVE ADJUSTMENTS
+     - Điều chỉnh kích thước và khoảng cách cho giao diện ở kích thước màn hình nhỏ.
+     ========================================================================== */
+  @media (max-width: 768px) {
+    
+    /* Giảm chiều cao của slider cho thiết bị di động */
+    .carousel-inner img {
+      height: 300px;
+    }
+    
+    /* Giảm khoảng cách giữa các section trên màn hình nhỏ */
+    section.container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    
+    /* Bạn có thể tùy chỉnh thêm kích thước chữ hoặc padding của navbar, footer,… */
+  }
+  /* ======================================
+   8. FEATURES SECTION
+   - Các style dành cho feature boxes trong phần Features
+======================================= */
+.feature-box {
+  padding: 30px 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  /* Thêm hiệu ứng bóng nhẹ để tạo cảm giác nổi bật */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box i {
+  display: block;
+  font-size: 48px;
+  color: #007bff; /* Màu của icon, bạn có thể thay đổi theo thương hiệu */
+  margin-bottom: 20px;
+}
+
+.feature-box h6 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+  
